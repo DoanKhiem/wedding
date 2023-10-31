@@ -30,8 +30,11 @@
                             </li>
                             <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html"
                                     title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                            <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="detail.html"
-                                    title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                            <li class="lnk" > 
+                                <span @click="deleteProduct(data.id)" data-toggle="tooltip" class="add-to-cart" title="Compare"> 
+                                    <i class="fa fa-trash"></i>
+                                </span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -46,6 +49,18 @@ import { defineComponent, ref, watch, computed, getCurrentInstance } from "vue";
 import axios from 'axios'
 export default defineComponent({
     setup(props) {
+        const deleteProduct = (productId) => {
+            console.log(productId);
+            axios({
+                method: 'delete',
+                url: `https://6419ba9ef398d7d95d47d12c.mockapi.io/demo/products/${productId}`,
+                responseType: 'stream'
+            }).then(function (response) {
+                console.log(response);
+                alert('Xóa thành công')
+                getList();
+            })
+        }
         const listData = ref([])
         // Truy xuất ảnh từ xa bằng GET request trong node.js
         const getList = () => {
@@ -57,10 +72,11 @@ export default defineComponent({
                 console.log(response.data);
                 listData.value = JSON.parse(response.data)
             })
-        }
+        };
         getList();
         return {
-            listData
+            listData,
+            deleteProduct,
         }
     }
 })

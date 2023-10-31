@@ -11,5 +11,5 @@ import Header from "./components/header.vue"
 	<HomePage></HomePage>
 	<Section></Section>
 	<Footer></Footer>
-	<!-- <RouterView /> -->
+	
 </template>
