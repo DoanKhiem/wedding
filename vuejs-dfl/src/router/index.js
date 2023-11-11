@@ -10,7 +10,7 @@ const router = createRouter({
       component: () => import('../components/product.vue')
     },
     {
-      path: '/form',
+      path: '/form/:id',
       name: 'form',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route

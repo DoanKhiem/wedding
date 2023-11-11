@@ -3,21 +3,17 @@
         <div  class="products">
             <div class="product">
                 <div class="product-image">
-                    <div class="image"> <a href="detail.html"><img src="src/assets/images/products/p1.jpg" alt=""></a>
+                    <div class="image" @click="detail(data.id)"><img src="src/assets/images/products/p1.jpg" alt="">
                     </div>
-
                     <!-- <div v-if="data % 2 == 0" class="tag new"><span>new</span></div>
                     <div v-else class="tag hot"><span>hot</span></div> -->
                 </div>
-
                 <div class="product-info text-left">
-                    <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                    <h3 class="name"><a href="detail.html">{{  data.name }}</a></h3>
                     <div class="rating rateit-small"></div>
                     <div class="description"></div>
-                    <div class="product-price"> <span class="price"> $450.99 </span> <span
-                            class="price-before-discount">$800</span> </div>
-
-
+                    <div class="product-price"> <span class="price"> ${{  data.price }} </span> <span
+                            class="price-before-discount">{{ data.sale }}%</span> </div>
                 </div>
                 <div class="cart clearfix animate-effect">
                     <div class="action">
@@ -47,6 +43,7 @@
 <script>
 import { defineComponent, ref, watch, computed, getCurrentInstance } from "vue";
 import axios from 'axios'
+import router from '../router'
 export default defineComponent({
     setup(props) {
         const deleteProduct = (productId) => {
@@ -74,9 +71,13 @@ export default defineComponent({
             })
         };
         getList();
+        const detail = (id) => {
+            router.push({ name: 'form', params: { id: id } })
+        }   
         return {
             listData,
             deleteProduct,
+            detail,
         }
     }
 })
