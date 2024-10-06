@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 /*------------------------------------------------------------------
     IMPORT FILES
@@ -20,7 +22,7 @@
 body {
     color: #666666;
     font-size: 15px;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Dancing Script', cursive;
     line-height: 1.80857;
 }
 
@@ -390,7 +392,7 @@ button:focus{
 
 .lbox-details h1{
 	font-size: 68px;
-	font-family: 'Marck Script', cursive;
+	font-family: 'Great Vibes', cursive;
 	color: #ffffff;
 	position: relative;
 	z-index: 3;
@@ -410,7 +412,7 @@ button:focus{
 .lbox-details p strong{
 	color: #dd666c;
 	font-size: 40px;
-	font-family: 'Marck Script', cursive;
+	font-family: 'Great Vibes', cursive;
 }
 .lbox-details a.btn{
 	background: #63c7bd;
@@ -440,7 +442,7 @@ button:focus{
 }
 .title-box h2{
 	font-size: 60px;
-	font-family: 'Marck Script', cursive;
+	font-family: 'Great Vibes', cursive;
 	color: #222222;
 }
 .title-box h2 span{
@@ -449,7 +451,7 @@ button:focus{
 }
 .about-main-info h2{
 	font-size: 40px;
-	font-family: 'Marck Script', cursive;
+	font-family: 'Great Vibes', cursive;
 }
 .about-main-info h2 span{
 	color: #dd666c;
@@ -462,7 +464,7 @@ button:focus{
 -------------------------------------------------------------------*/
 
 .story-box{
-	padding: 70px 0px;
+	padding: 40px 0px;
 }
 
 .align-left {
@@ -531,7 +533,7 @@ button:focus{
 }
 
 .display-font{
-	font-family: 'Marck Script', cursive;
+	font-family: 'Great Vibes', cursive;
 	font-size: 30px;
 	color: #222222;
 }
@@ -561,13 +563,12 @@ button:focus{
     Family
 -------------------------------------------------------------------*/
 
-.family-box{
-	padding: 70px 0px;
+.invitation-card-box{
+	padding: 40px 0px;
 }
 
 .single-team-member {
     position: relative;
-    margin-top: 30px;
 	border: 10px solid #fff;
 	box-shadow: 0 2px 5px rgba(0,0,0,.1);
 }
@@ -592,7 +593,7 @@ button:focus{
 	background-color: #f1f1f1;
 }
 .family-info h4{
-	font-family: 'Marck Script', cursive;
+	font-family: 'Great Vibes', cursive;
 	font-size: 24px;
 }
 .family-info p{
@@ -605,7 +606,7 @@ button:focus{
 -------------------------------------------------------------------*/
 
 .gallery-box{
-	padding: 70px 0px;
+	padding: 40px 0px;
 }
 
 .gallery-box ul{}
@@ -776,6 +777,25 @@ select.form-control:not([size]):not([multiple]){
 }
 .footer-box .footer-company-name a:hover{
 	color: #63c7bd;
+}
+
+#PARAGRAPH91 > .ladi-paragraph {
+    font-family: Arima, cursive;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: rgb(139, 91, 19);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#PARAGRAPH100 > .ladi-paragraph, #PARAGRAPH93 > .ladi-paragraph, #PARAGRAPH95 > .ladi-paragraph {
+    font-family: Philosopher, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(77, 77, 77);
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 
