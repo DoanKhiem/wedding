@@ -21,9 +21,6 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" href="#home">TRANG CHỦ</a></li>
-                        <li><a class="nav-link" href="#about">GIỚI THIỆU</a></li>
-                        <li><a class="nav-link" href="#story">CÂU CHUYỆN</a></li>
-                        <li><a class="nav-link" href="#family">GIA ĐÌNH</a></li>
                         <li><a class="nav-link" href="#gallery">ALBUM HÌNH CƯỚI</a></li>
                         <li><a class="nav-link" href="#events">SỰ KIỆN</a></li>
                         <li><a class="nav-link" href="#contact">THÔNG TIN</a></li>
@@ -295,7 +292,7 @@
             </div>
         </div>
     </footer>
-    <div v-if="isModalVisible" class="wp-modal-image">
+    <div v-if="isModalVisible" class="wp-modal-image" @click="closeModalIfOutside">
         <p v-if="copied" class="text-center mb-0" style="color: #ecf3ec; font-size: 20px;">Đã sao chép số tài khoản!</p>
         <div class="modal-image">
             <span class="close" @click="closeModal">&times;</span>
@@ -337,22 +334,30 @@
     };
 
     // Hàm sao chép STK
-const copyAccountNumber = () => {
-    const input = document.createElement('input');
-    input.value = bankNumber.value;
-    document.body.appendChild(input);
-    
-    input.select();
-    document.execCommand('copy');
-    
-    document.body.removeChild(input);
-    
-    copied.value = true;
-    
-    setTimeout(() => {
-        copied.value = false;
-    }, 2000);
-};
+    const copyAccountNumber = () => {
+        const input = document.createElement('input');
+        input.value = bankNumber.value;
+        document.body.appendChild(input);
+        
+        input.select();
+        document.execCommand('copy');
+        
+        document.body.removeChild(input);
+        
+        copied.value = true;
+        
+        setTimeout(() => {
+            copied.value = false;
+        }, 2000);
+    };
+
+    const closeModalIfOutside = (event: MouseEvent) => {
+        const modalContent = document.querySelector('.modal-content');
+        
+        if (!modalContent?.contains(event.target as Node)) {
+            closeModal();
+        }
+    };
 </script>
 
 
