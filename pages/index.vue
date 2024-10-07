@@ -43,10 +43,9 @@
                         style="background-image:url(images/slider-01.jpg);">
                         <div class="lbox-caption">
                             <div class="lbox-details">
-                                <h1>#Đình Hiếu & #Nguyễn Hoài</h1>
-                                <h2>Chúng tôi sắp kết hôn</h2>
+                                <h1>Đình Hiếu &hearts; Nguyễn Hoài</h1>
+                                <h2>SAVE THE DATE</h2>
                                 <p><strong> Ngày 09 Tháng 11 Năm 2024</strong></p>
-                                <a href="#" class="btn ">Liên Hệ</a>
                             </div>
                         </div>
                     </div>
@@ -54,10 +53,9 @@
                         style="background-image:url(images/slider-02.jpg);">
                         <div class="lbox-caption">
                             <div class="lbox-details">
-                                <h1>#Đình Hiếu & #Nguyễn Hoài</h1>
-                                <h2>Chúng tôi sắp kết hôn</h2>
+                                <h1>Đình Hiếu &hearts; Nguyễn Hoài</h1>
+                                <h2>SAVE THE DATE</h2>
                                 <p><strong> Ngày 09 Tháng 11 Năm 2024</strong></p>
-                                <a href="#" class="btn ">Liên Hệ</a>
                             </div>
                         </div>
                     </div>
@@ -65,10 +63,9 @@
                         style="background-image:url(images/slider-03.jpg);">
                         <div class="lbox-caption">
                             <div class="lbox-details">
-                                <h1>#Đình Hiếu & #Nguyễn Hoài</h1>
-                                <h2>Chúng tôi sắp kết hôn</h2>
+                                <h1>Đình Hiếu &hearts; Nguyễn Hoài</h1>
+                                <h2>SAVE THE DATE</h2>
                                 <p><strong> Ngày 09 Tháng 11 Năm 2024</strong></p>
-                                <a href="#" class="btn ">Liên Hệ</a>
                             </div>
                         </div>
 
@@ -91,9 +88,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-sm-12">
                     <div class="single-team-member">
-                        <img class="img-fluid" src="/images/thiep.png" alt="" />
+                        <img @click="openModal('thiep.png', false, '')" class="img-fluid image-main" src="/images/thiep.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -178,36 +175,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-sm-12">
                     <div class="event-inner">
-                        <div class="event-img">
-                            <img class="img-fluid" src="/images/event-img-01.jpg" alt="" />
-                        </div>
-                        <h2>09 : 00 Đón khách</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="event-inner">
-                        <div class="event-img">
-                            <img class="img-fluid" src="/images/event-img-02.jpg" alt="" />
-                        </div>
-                        <h2>09 : 30 Lễ Thành Hôn</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="event-inner">
-                        <div class="event-img">
-                            <img class="img-fluid" src="/images/event-img-03.jpg" alt="" />
-                        </div>
-                        <h2>10 : 00 Khai tiệc</h2>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="event-inner">
-                        <div class="event-img">
-                            <img class="img-fluid" src="/images/event-img-03.jpg" alt="" />
-                        </div>
-                        <h2>11 : 30 Chụp ảnh cùng Cô Dâu & Chú Rể</h2>
+                        <img @click="openModal('time_line.png', false, '')" class="img-fluid image-main" src="/images/time_line.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -298,7 +268,7 @@
                         <img class="img-fluid" src="/images/thiep.png" alt="" />
                         <p style="margin-bottom: 10px !important;">Chú Rể</p>
                         <h2>Đình Hiếu</h2>
-                        <button type="button" class="btn btn-primary w-100" style="background-color: #63c7bd !important; border: none !important;">Mừng Cưới</button>
+                        <button @click="openModal('qr_hieu.jpg', true, '0349673669')" type="button" class="btn btn-primary w-100" style="background-color: #63c7bd !important; border: none !important;">Mừng Cưới</button>
                     </div>
                 </div>
                 <div class="col-6">
@@ -306,7 +276,7 @@
                         <img class="img-fluid" src="/images/thiep.png" alt="" />
                         <p style="margin-bottom: 10px !important;">Cô Dâu</p>
                         <h2>Nguyễn Hoài</h2>
-                        <button type="button" class="btn btn-primary w-100" style="background-color: #63c7bd !important; border: none !important;">Mừng Cưới</button>
+                        <button @click="openModal('qr_hoai.jpg', true, '0382037962')" type="button" class="btn btn-primary w-100" style="background-color: #63c7bd !important; border: none !important;">Mừng Cưới</button>
                     </div>
                 </div>
             </div>
@@ -325,11 +295,65 @@
             </div>
         </div>
     </footer>
+    <div v-if="isModalVisible" class="wp-modal-image">
+        <p v-if="copied" class="text-center mb-0" style="color: #ecf3ec; font-size: 20px;">Đã sao chép số tài khoản!</p>
+        <div class="modal-image">
+            <span class="close" @click="closeModal">&times;</span>
+            <img class="modal-content" :src="modalImageSrc" id="img01">
+            <div v-if="checkBtn" class="d-flex text-center justify-content-center mt-2">
+                <button @click="downloadImage" type="button" class="btn btn-primary" style="padding: 5px 50px; margin-right: 10px;">Tải Ảnh</button>
+                <button @click="copyAccountNumber" type="button" class="btn btn-primary" style="padding: 5px 50px; margin-left: 10px;">Coppy STK</button>
+            </div>
+        </div>
+    </div>
     <!-- End Footer -->
 </template>
 
 <script setup lang="ts">
+    import { ref } from 'vue';
 
+    const isModalVisible = ref(false);
+    const modalImageSrc = ref('');
+    const checkBtn = ref(false);
+    const bankNumber = ref('');
+    const copied = ref(false);
+
+    const openModal = (nameImage: string, checkBtnModal: boolean, stk: string) => {
+        modalImageSrc.value = '/images/' + nameImage; 
+        isModalVisible.value = true;
+        checkBtn.value = checkBtnModal;
+        bankNumber.value = stk;
+    };
+
+    const closeModal = () => {
+        isModalVisible.value = false;
+    };
+
+    const downloadImage = () => {
+        const link = document.createElement('a');
+        link.href = modalImageSrc.value;
+        link.download = 'wedding'+modalImageSrc.value;
+        link.click();
+    };
+
+    // Hàm sao chép STK
+const copyAccountNumber = () => {
+    const input = document.createElement('input');
+    input.value = bankNumber.value;
+    document.body.appendChild(input);
+    
+    input.select();
+    document.execCommand('copy');
+    
+    document.body.removeChild(input);
+    
+    copied.value = true;
+    
+    setTimeout(() => {
+        copied.value = false;
+    }, 2000);
+};
 </script>
+
 
 <style scoped></style>
