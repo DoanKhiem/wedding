@@ -11,7 +11,8 @@
     <header class="top-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html"></a>
+                <a class="navbar-brand" href="#home"><img src="/images/logo_wedding.png" width="50px" height="auto"
+                        alt="image"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
                     aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
@@ -32,7 +33,7 @@
     <!-- End header -->
 
     <!-- Start Banner -->
-    <div class="ulockd-home-slider">
+    <div id="home" class="ulockd-home-slider">
         <div class="container-fluid">
             <div class="row">
                 <div class="pogoSlider" id="js-main-slider">
@@ -87,13 +88,47 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="single-team-member">
-                        <img @click="openModal('thiep.png', false, '')" class="img-fluid image-main" src="/images/thiep.png" alt="" />
+                        <img @click="openModal('thiep.png', false, '')" class="img-fluid image-main"
+                            src="/images/thiep.png" alt="" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Family -->
+
+    <div id="SECTION2" class="ladi-section">
+        <div class="ladi-section-background"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-box">
+                        <h2>Chú Rể &nbsp;&&nbsp; Cô Dâu</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-6">
+                    <div class="custom-image text-center">
+                        <img @click="openModal('thiep.png', false, '')" class="img-fluid mb-2" src="/images/thiep.png"
+                            alt="" />
+                        <h2>&hearts; Đình Hiếu</h2>
+                        <h3 class="name-family">Con ông : <b>Nguyễn Đình Quỳnh</b></h3>
+                        <h3 class="name-family">Con bà : <b>Lê Thị Lan</b></h3>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="custom-image text-center">
+                        <img @click="openModal('thiep.png', false, '')" class="img-fluid mb-2" src="/images/thiep.png"
+                            alt="" />
+                        <h2>&hearts; Nguyễn Hoài</h2>
+                        <h3 class="name-family">Con ông : <b>Nguyễn Đình Phương</b> <br></h3>
+                        <h3 class="name-family">Con bà : <b>Ngô Thị Hằng</b></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Start Gallery -->
     <div id="gallery" class="gallery-box">
@@ -174,7 +209,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="event-inner">
-                        <img @click="openModal('time_line.png', false, '')" class="img-fluid image-main" src="/images/time_line.png" alt="" />
+                        <img @click="openModal('time_line.png', false, '')" class="img-fluid image-main"
+                            src="/images/time_line.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -189,7 +225,8 @@
                 <div class="col-lg-12">
                     <div class="title-box">
                         <h2>Sổ Lưu Bút</h2>
-                        <p>Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!</p>
+                        <p>Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -203,27 +240,6 @@
                                         <input type="text" class="form-control" id="name" name="name"
                                             placeholder="Nhập họ tên" required
                                             data-error="Vui lòng điền họ tên của bạn!">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Nhập email" id="email" class="form-control"
-                                            name="email" required data-error="Vui lòng điền email của bạn!">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <select class="custom-select d-block form-control" id="guest" required
-                                            data-error="Số người tham dự.">
-                                            <option disabled selected>Chọn số người thạm dự*</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -255,25 +271,82 @@
                 <div class="col-lg-12">
                     <div class="title-box">
                         <h2>Chúc Phúc</h2>
-                        <p>Cảm ơn tất cả tình cảm của cô dì chú bác, bạn bè và anh chị em đã dành cho Hiếu &amp; Hoài</p>
+                        <p>Cảm ơn tất cả tình cảm của cô dì chú bác, bạn bè và anh chị em đã dành cho Hiếu &amp; Hoài
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="row mb-4">
+
+            <div class="row mb-4 qr-pc">
                 <div class="col-6">
                     <div class="custom-image text-center">
-                        <img class="img-fluid" src="/images/thiep.png" alt="" />
+                        <img @click="openModal('thiep.png', false, '')" class="img-fluid" src="/images/thiep.png"
+                            alt="" />
                         <p style="margin-bottom: 10px !important;">Chú Rể</p>
                         <h2>Đình Hiếu</h2>
-                        <button @click="openModal('qr_hieu.jpg', true, '0349673669')" type="button" class="btn btn-primary w-100" style="background-color: #63c7bd !important; border: none !important;">Mừng Cưới</button>
+                        <button @click="openModal('qr-hieu.jpg', true, '0349673669')" type="button"
+                            class="btn btn-primary w-100"
+                            style="background-color: #63c7bd !important; border: none !important;">Mừng Cưới</button>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="custom-image text-center">
-                        <img class="img-fluid" src="/images/thiep.png" alt="" />
+                        <img @click="openModal('thiep.png', false, '')" class="img-fluid" src="/images/thiep.png"
+                            alt="" />
                         <p style="margin-bottom: 10px !important;">Cô Dâu</p>
                         <h2>Nguyễn Hoài</h2>
-                        <button @click="openModal('qr_hoai.jpg', true, '0382037962')" type="button" class="btn btn-primary w-100" style="background-color: #63c7bd !important; border: none !important;">Mừng Cưới</button>
+                        <button @click="openModal('qr-hoai.jpg', true, '0382037962')" type="button"
+                            class="btn btn-primary w-100"
+                            style="background-color: #63c7bd !important; border: none !important;">Mừng Cưới</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2 qr-mobile">
+                <div class="mb-4">
+                    <h2 class="text-center">Mừng cưới đến chú rể</h2>
+                    <p v-if="mobileCopied1" class="text-center mb-0" style="color: #10b307; font-size: 20px;">Đã sao chép số tài khoản!</p>
+                    <div class="col-12 text-center wp-qr-image" style="font-family: 'FontAwesome';">
+                        <img class="qr-image" width="100%" src="/images/qr-hieu.jpg" alt="">
+                        <b>Ngân hàng: </b> VPBank <br>
+                        <b>Số Tài Khoản: </b> 0349673669 <br>
+                        <b>Tên tài khoản: </b> NGUYEN DINH HIEU
+                    </div>
+                    <div class="d-flex text-center justify-content-center mt-2">
+                        <button @click="downloadImageMobile('qr-hieu.jpg')" type="button" class="btn btn-primary" style="padding: 5px 50px; margin-right: 10px; background-color: #63c7bd !important; border: none !important;">Tải Ảnh</button>
+                        <button @click="copyAccountNumberMobile('0349673669')" type="button" class="btn btn-primary" style="padding: 5px 50px; margin-left: 10px; background-color: #63c7bd !important; border: none !important;">Coppy STK</button>
+                    </div>
+                </div>
+                
+                <div class="mt-4 mb-2">
+                    <h2 class="text-center">Mừng cưới đến cô dâu</h2>
+                    <p v-if="mobileCopied2" class="text-center mb-0" style="color: #10b307; font-size: 20px;">Đã sao chép số tài khoản!</p>
+                    <div class="col-12 text-center wp-qr-image" style="font-family: 'FontAwesome';">
+                        <img class="qr-image" width="100%" src="/images/qr-hoai.jpg" alt="">
+                        <b>Ngân hàng: </b> VietTinBank <br>
+                        <b>Số Tài Khoản: </b> 0382037962 <br>
+                        <b>Tên tài khoản: </b> NGUYEN THI HOAI 
+                    </div>
+                    <div class="d-flex text-center justify-content-center mt-2">
+                        <button @click="downloadImageMobile('qr-hoai.jpg')" type="button" class="btn btn-primary" style="padding: 5px 50px; margin-right: 10px; background-color: #63c7bd !important; border: none !important;">Tải Ảnh</button>
+                        <button @click="copyAccountNumberMobile('0382037962')" type="button" class="btn btn-primary" style="padding: 5px 50px; margin-left: 10px; background-color: #63c7bd !important; border: none !important;">Coppy STK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="thank" class="thank-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="event-inner">
+                        <img width="100%"
+                            src="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/88b6d6c5cb36ccd3725c92f0e0b3d89b.jpeg"
+                            alt="Hiếu &amp; Hoài Wedding site!">
+                    </div>
+                    <div class="title-box">
+                        <h2 class="text-center">Forever our love, Thank you!</h2>
                     </div>
                 </div>
             </div>
@@ -285,9 +358,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 Design By : <a
-                            href="https://html.design/">html design</a> Distributed by: <a
-                            href="https://themewagon.com/">ThemeWagon</a></p>
+                    <p class="footer-company-name">Happy wedding. &copy; 2024 Design By : Nguyễn Đình Hiếu</p>
                 </div>
             </div>
         </div>
@@ -298,8 +369,10 @@
             <span class="close" @click="closeModal">&times;</span>
             <img class="modal-content" :src="modalImageSrc" id="img01">
             <div v-if="checkBtn" class="d-flex text-center justify-content-center mt-2">
-                <button @click="downloadImage" type="button" class="btn btn-primary" style="padding: 5px 50px; margin-right: 10px;">Tải Ảnh</button>
-                <button @click="copyAccountNumber" type="button" class="btn btn-primary" style="padding: 5px 50px; margin-left: 10px;">Coppy STK</button>
+                <button @click="downloadImage" type="button" class="btn btn-primary"
+                    style="padding: 5px 50px; margin-right: 10px;">Tải Ảnh</button>
+                <button @click="copyAccountNumber" type="button" class="btn btn-primary"
+                    style="padding: 5px 50px; margin-left: 10px;">Coppy STK</button>
             </div>
         </div>
     </div>
@@ -307,57 +380,88 @@
 </template>
 
 <script setup lang="ts">
-    import { ref } from 'vue';
+import { ref } from 'vue';
 
-    const isModalVisible = ref(false);
-    const modalImageSrc = ref('');
-    const checkBtn = ref(false);
-    const bankNumber = ref('');
-    const copied = ref(false);
+const isModalVisible = ref(false);
+const modalImageSrc = ref('');
+const checkBtn = ref(false);
+const bankNumber = ref('');
+const copied = ref(false);
+const mobileCopied1 = ref(false);
+const mobileCopied2 = ref(false);
 
-    const openModal = (nameImage: string, checkBtnModal: boolean, stk: string) => {
-        modalImageSrc.value = '/images/' + nameImage; 
-        isModalVisible.value = true;
-        checkBtn.value = checkBtnModal;
-        bankNumber.value = stk;
-    };
+const openModal = (nameImage: string, checkBtnModal: boolean, stk: string) => {
+    modalImageSrc.value = '/images/' + nameImage;
+    isModalVisible.value = true;
+    checkBtn.value = checkBtnModal;
+    bankNumber.value = stk;
+};
 
-    const closeModal = () => {
-        isModalVisible.value = false;
-    };
+const closeModal = () => {
+    isModalVisible.value = false;
+};
 
-    const downloadImage = () => {
-        const link = document.createElement('a');
-        link.href = modalImageSrc.value;
-        link.download = 'wedding'+modalImageSrc.value;
-        link.click();
-    };
+const downloadImage = () => {
+    const link = document.createElement('a');
+    link.href = modalImageSrc.value;
+    link.download = 'wedding' + modalImageSrc.value;
+    link.click();
+};
 
-    // Hàm sao chép STK
-    const copyAccountNumber = () => {
-        const input = document.createElement('input');
-        input.value = bankNumber.value;
-        document.body.appendChild(input);
-        
-        input.select();
-        document.execCommand('copy');
-        
-        document.body.removeChild(input);
-        
-        copied.value = true;
-        
+// Hàm sao chép STK
+const copyAccountNumber = () => {
+    const input = document.createElement('input');
+    input.value = bankNumber.value;
+    document.body.appendChild(input);
+
+    input.select();
+    document.execCommand('copy');
+
+    document.body.removeChild(input);
+
+    copied.value = true;
+
+    setTimeout(() => {
+        copied.value = false;
+    }, 2000);
+};
+
+const closeModalIfOutside = (event: MouseEvent) => {
+    const modalContent = document.querySelector('.modal-image');
+
+    if (!modalContent?.contains(event.target as Node)) {
+        closeModal();
+    }
+};
+
+const downloadImageMobile = (namQrImage: string) => {
+    const link = document.createElement('a');
+    link.href = '/images/'+namQrImage;
+    link.download = 'wedding' + '/images/'+namQrImage;
+    link.click();
+}
+
+const copyAccountNumberMobile = (nameStk: string) => {
+    const input = document.createElement('input');
+    input.value = nameStk;
+    document.body.appendChild(input);
+
+    input.select();
+    document.execCommand('copy');
+
+    document.body.removeChild(input);
+    if (nameStk == '0349673669') {
+        mobileCopied1.value = true;
         setTimeout(() => {
-            copied.value = false;
+            mobileCopied1.value = false;
         }, 2000);
-    };
-
-    const closeModalIfOutside = (event: MouseEvent) => {
-        const modalContent = document.querySelector('.modal-content');
-        
-        if (!modalContent?.contains(event.target as Node)) {
-            closeModal();
-        }
-    };
+    } else {
+        mobileCopied2.value = true;
+        setTimeout(() => {
+            mobileCopied2.value = false;
+        }, 2000);
+    }
+}
 </script>
 
 

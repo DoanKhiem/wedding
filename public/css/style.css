@@ -598,7 +598,7 @@ button:focus {
     Family
 -------------------------------------------------------------------*/
 
-.invitation-card-box {
+.invitation-card-box, .thank-box {
 	padding: 40px 0px;
 }
 
@@ -747,6 +747,10 @@ button:focus {
 -------------------------------------------------------------------*/
 
 .contact-box {
+	padding: 70px 0px;
+}
+
+#SECTION2, #SECTION15 {
 	padding: 70px 0px;
 }
 
@@ -943,6 +947,10 @@ select.form-control:not([size]):not([multiple]) {
 	cursor: pointer;
 }
 
+.qr-mobile {
+	display: none;
+}
+
 @media only screen and (max-width: 700px) {
 	.modal-content {
 		width: 100%;
@@ -959,4 +967,35 @@ select.form-control:not([size]):not([multiple]) {
 	.lbox-details h2 {
         font-size: 18px !important;
     }
+
+	.contact-box {
+		padding: 20px 0px;
+	}
+
+	.events-box {
+		padding: 20px 0px;
+	}
+	
+	#SECTION2, #SECTION15, .thank-box {
+		padding: 20px 0px;
+	}
+
+	.name-family {
+		font-size: 14px;
+	}
+
+	.qr-pc {
+		display: none;
+	}
+
+	.qr-mobile {
+		display: unset;
+	}
+}
+
+.wp-qr-image {
+	border: 5px solid #4CAF50;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: white;
 }
