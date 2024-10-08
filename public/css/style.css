@@ -985,11 +985,11 @@ select.form-control:not([size]):not([multiple]) {
 	}
 
 	.qr-pc {
-		display: none;
+		display: none !important;
 	}
 
 	.qr-mobile {
-		display: unset;
+		display: unset !important;
 	}
 }
 
