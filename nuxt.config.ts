@@ -22,6 +22,13 @@ export default defineNuxtConfig({
         { src: '/js/contact-form-script.js', type: 'text/javascript' },
         { src: '/js/custom.js', type: 'text/javascript' },
         
+      ],
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: 'Hieu & Hoai Wedding Invitation' },
+        { hid: 'og:description', property: 'og:description', content: 'Hieu và Hoai hân hạnh mời bạn tham dự ngày cưới.' },
+        { hid: 'og:image', property: 'og:image', content: '/images/logo_wedding.png' },
+        { hid: 'og:url', property: 'og:url', content: 'https://hieu-hoai-wedding.vercel.app' },
+        { hid: 'og:type', property: 'og:type', content: 'website' }
       ]
     }
   }
