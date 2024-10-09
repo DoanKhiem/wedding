@@ -336,6 +336,13 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="title-box">
+            <h2 class="text-center">Đường đến tiệc cưới</h2>
+            <MapComponent />
+        </div>
+    </div>
+
     <div id="thank" class="thank-box">
         <div class="container">
             <div class="row">
@@ -381,6 +388,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import MapComponent from './MapComponent.vue';
 
 const isModalVisible = ref(false);
 const modalImageSrc = ref('');

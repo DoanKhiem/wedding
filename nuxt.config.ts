@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         { src: '/js/form-validator.min.js', type: 'text/javascript' },
         { src: '/js/contact-form-script.js', type: 'text/javascript' },
         { src: '/js/custom.js', type: 'text/javascript' },
-        
+        { src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDnhPVbIYjfTjDEtM7BCLF5lCFMF45rEBs' },
       ],
       meta: [
         { hid: 'og:title', property: 'og:title', content: 'Hieu & Hoai Wedding Invitation' },
