@@ -123,7 +123,7 @@
                             alt="" />
                         <h2>&hearts; Nguyễn Hoài</h2>
                         <h3 class="name-family">Con ông : <b>Nguyễn Đình Phương</b> <br></h3>
-                        <h3 class="name-family">Con bà : <b>Ngô Thị Hằng</b></h3>
+                        <h3 class="name-family">Con bà : <b>Ngô Thị Hoa</b></h3>
                     </div>
                 </div>
             </div>
@@ -307,7 +307,7 @@
                     <p v-if="mobileCopied1" class="text-center mb-0" style="color: #10b307; font-size: 20px;">Đã sao chép số tài khoản!</p>
                     <div class="col-12 text-center wp-qr-image" style="font-family: 'FontAwesome';">
                         <img class="qr-image" width="100%" src="/images/qr-hieu.jpg" alt="">
-                        <b>Ngân hàng: </b> VPBank <br>
+                        <b>Ngân hàng: </b> VP Bank <br>
                         <b>Số Tài Khoản: </b> 0349673669 <br>
                         <b>Tên tài khoản: </b> NGUYEN DINH HIEU
                     </div>
@@ -322,7 +322,7 @@
                     <p v-if="mobileCopied2" class="text-center mb-0" style="color: #10b307; font-size: 20px;">Đã sao chép số tài khoản!</p>
                     <div class="col-12 text-center wp-qr-image" style="font-family: 'FontAwesome';">
                         <img class="qr-image" width="100%" src="/images/qr-hoai.jpg" alt="">
-                        <b>Ngân hàng: </b> VietTinBank <br>
+                        <b>Ngân hàng: </b> MB Bank<br>
                         <b>Số Tài Khoản: </b> 0382037962 <br>
                         <b>Tên tài khoản: </b> NGUYEN THI HOAI 
                     </div>
