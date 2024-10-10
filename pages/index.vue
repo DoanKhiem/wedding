@@ -339,7 +339,17 @@
     <div class="container">
         <div class="title-box">
             <h2 class="text-center">Đường đến tiệc cưới</h2>
-            <MapComponent />
+            <div class="map-container d-flex justify-content-between">
+                <div class="map-location mx-3">
+                    <h1 class="text-center">Nhà trai</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9194.749285109798!2d106.24889836686194!3d20.987420539873188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31359daf01513ffb%3A0x88968030073dd2f1!2zTmjDoCDEkG_DoG4gS2hpw6pt!5e1!3m2!1svi!2s!4v1728574266400!5m2!1svi!2s" width="100%" height="500" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map-location mx-3">
+                    <h1 class="text-center">Nhà gái</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9194.749285109798!2d106.24889836686194!3d20.987420539873188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31359daf01513ffb%3A0x88968030073dd2f1!2zTmjDoCDEkG_DoG4gS2hpw6pt!5e1!3m2!1svi!2s!4v1728574266400!5m2!1svi!2s" width="100%" height="500" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- <MapComponent /> -->
         </div>
     </div>
 
@@ -473,4 +483,20 @@ const copyAccountNumberMobile = (nameStk: string) => {
 </script>
 
 
-<style scoped></style>
+<style scoped>
+
+.map-location {
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .map-location {
+        width: calc(100% - 2rem);
+        margin-top: 15px;
+    }
+    .map-container {
+        flex-direction: column;
+    }
+}
+
+</style>
