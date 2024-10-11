@@ -1013,6 +1013,10 @@ select.form-control:not([size]):not([multiple]) {
 		padding: 0 !important;
 		margin-bottom: 30px !important;
 	}
+
+	.map-wedding {
+		margin-top: 50px;
+	}
 }
 
 .wp-qr-image {

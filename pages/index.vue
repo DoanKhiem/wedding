@@ -336,7 +336,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container map-wedding">
         <div class="title-box">
             <h2 class="text-center">Đường đến tiệc cưới</h2>
             <div class="map-container d-flex justify-content-between">
