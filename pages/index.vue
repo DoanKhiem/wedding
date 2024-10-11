@@ -340,13 +340,29 @@
         <div class="title-box">
             <h2 class="text-center">Đường đến tiệc cưới</h2>
             <div class="map-container d-flex justify-content-between">
-                <div class="map-location mx-3">
+                <div class="map-location wrapper-map text-left col-sm-6">
                     <h1 class="text-center">Nhà trai</h1>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d941.6264905281023!2d105.70043326962538!3d19.26035126491649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE1JzM3LjMiTiAxMDXCsDQyJzAzLjkiRQ!5e0!3m2!1svi!2s!4v1728652523373!5m2!1svi!2s" width="100%" height="500" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="wp-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d941.6264905281023!2d105.70043326962538!3d19.26035126491649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE1JzM3LjMiTiAxMDXCsDQyJzAzLjkiRQ!5e0!3m2!1svi!2s!4v1728652523373!5m2!1svi!2s" width="100%" height="500" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div style="font-family: 'FontAwesome';">
+                            <b>Ông:</b> Nguyễn Đình Quỳnh <br>
+                            <b>Bà:</b> Lê Thị Lan <br>
+                            <b>Chú Rể:</b> Nguyễn Đình Hiếu <br>
+                            <b>Địa Chỉ:</b> Thôn 11, Xã Quỳnh Vinh, TX. Hoàng Mai, Nghệ An. <br>
+                        </div>
+                    </div>
                 </div>
-                <div class="map-location mx-3">
+                <div class="map-location wrapper-map text-left col-sm-6">
                     <h1 class="text-center">Nhà gái</h1>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3767.3814757564123!2d105.71025837596775!3d19.22219944736519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDEzJzE5LjkiTiAxMDXCsDQyJzQ2LjIiRQ!5e0!3m2!1svi!2s!4v1728652383888!5m2!1svi!2s" width="100%" height="500" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="wp-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3767.3814757564123!2d105.71025837596775!3d19.22219944736519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDEzJzE5LjkiTiAxMDXCsDQyJzQ2LjIiRQ!5e0!3m2!1svi!2s!4v1728652383888!5m2!1svi!2s" width="100%" height="500" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div style="font-family: 'FontAwesome';">
+                            <b>Ông:</b> Nguyễn Đình Phương <br>
+                            <b>Bà:</b> Ngô Thị Hoa <br>
+                            <b>Cô Dâu:</b> Nguyễn Thị Hoài <br>
+                            <b>Địa Chỉ:</b> TDP. Kim Ngọc, P. Mai Hùng, TX. Hoàng Mai, Nghệ An. <br>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- <MapComponent /> -->
